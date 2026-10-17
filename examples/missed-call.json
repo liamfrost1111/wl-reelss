@@ -1,0 +1,8 @@
+{"voice":"bm_daniel","speed":1.08,"segments":[
+ {"show":"hook","say":"Missed a call while you were on a job?","caption":"Missed a call\nwhile on a job?","accent":"while on a job?"},
+ {"show":"notif","say":"That's a customer. And right now, they're ringing the next plumber on Google.","clock":"10:12","notifs":[{"app":"Phone","icon":"✆","color":"#EF6A5E","title":"Missed call","body":"07700 900 123"},{"app":"Phone","icon":"✆","color":"#EF6A5E","title":"Missed call","body":"07700 900 123"}]},
+ {"show":"chat","say":"With us, they get a text back in seconds, asking what they need.","contact":"07700 900 123","chat":[{"from":"us","text":"Hi, sorry we missed you, we're on a job. What can we help with?","label":"sent automatically"},{"from":"them","text":"Boiler's leaking, can someone come tomorrow?"}]},
+ {"show":"notif","say":"So by the time you're off the job, the next one's already waiting.","clock":"10:31","notifs":[{"app":"WL Inbox","icon":"★","color":"#FFD21F","title":"New enquiry","body":"Boiler leak, wants tomorrow morning"}]},
+ {"show":"office","say":"We build AI staff for small businesses, and we set the whole thing up for you.","focus":"inbox","caption":"AI staff for\nsmall businesses","accent":"small businesses"},
+ {"show":"cta","say":"Comment setup, and I'll show you how it'd work for yours.","button":"Comment SETUP"}
+]}
