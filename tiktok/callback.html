@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TikTok connected | WL Reels</title><link rel="stylesheet" href="../legal/style.css"></head>
+<body><main><h1 id="h">Connecting TikTok…</h1><p id="p"></p><code id="c" hidden></code><button id="b" hidden>Copy code</button>
+<script>
+const q=new URLSearchParams(location.search),code=q.get('code'),err=q.get('error');
+const h=document.getElementById('h'),p=document.getElementById('p'),c=document.getElementById('c'),b=document.getElementById('b');
+if(code){h.textContent='Nearly done';p.textContent='Copy this code and paste it into your chat with Claude. It only works for a few minutes and only once.';c.textContent=code;c.hidden=false;b.hidden=false;
+ b.onclick=()=>navigator.clipboard.writeText(code).then(()=>b.textContent='Copied');}
+else{h.textContent='Not connected';p.textContent=err?('TikTok said: '+err+' '+(q.get('error_description')||'')):'No code came back from TikTok. Try the connect link again.';}
+</script></main></body></html>
