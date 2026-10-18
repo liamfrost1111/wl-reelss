@@ -1,10 +1,11 @@
 """Original lofi bed for WL reels. Pure synthesis, no samples, so no copyright.
-Usage: python3 lofi.py out.wav SECONDS SEED
+Usage: python3 lofi.py out.wav SECONDS SEED [CRACKLE 0|1]
 """
 import sys, numpy as np, wave
 
 SR = 44100
 out, secs, seed = sys.argv[1], float(sys.argv[2]), int(sys.argv[3]) if len(sys.argv) > 3 else 1
+crackle_on = (sys.argv[4] != '0') if len(sys.argv) > 4 else False  # vinyl crackle + hiss, off by default
 rng = np.random.default_rng(seed)
 BPM = [72, 76, 80, 84][seed % 4]
 beat = 60 / BPM
@@ -78,7 +79,9 @@ while b * beat < secs:
 crackle = np.zeros(n)
 idx = rng.integers(0, n, int(secs * 14))
 crackle[idx] = rng.uniform(-1, 1, len(idx))
-mix += 0.12 * lp(crackle, 3000) + 0.006 * lp(rng.standard_normal(n), 1200)
+hiss = lp(rng.standard_normal(n), 1200)  # drawn every time so the rest of the track stays the same
+if crackle_on:
+    mix += 0.12 * lp(crackle, 3000) + 0.006 * hiss
 
 mix = lp(mix, 5200)  # warm it up
 fade = int(SR * 0.8)

@@ -1,5 +1,5 @@
 // Voiceover ad reel. node render2.js config.json out.mp4 [seed]
-// config: {voice, speed, segments:[{say, show:"hook"|"notif"|"chat"|"office"|"cta", caption, accent, notifs, chat, contact, focus, button, sub}]}
+// config: {voice, speed, music (background volume, default 0.16, 0 = none), crackle (vinyl crackle, default false), segments:[{say, show:"hook"|"notif"|"chat"|"office"|"cta", caption, accent, notifs, chat, contact, focus, button, sub}]}
 const { chromium } = require('playwright');
 const { spawn, execFileSync } = require('child_process');
 const fs = require('fs'), path = require('path');
@@ -16,12 +16,17 @@ const fs = require('fs'), path = require('path');
 
   // audio: voice segments placed on the timeline, lofi bed underneath (ducked)
   const music = path.join(tmp, 'm.wav');
-  execFileSync('python3', [path.join(dir, 'tools/lofi.py'), music, String(D + 0.5), seedArg || '1']);
+  const musicVol = cfg.music === undefined ? 0.16 : Math.max(0, Number(cfg.music) || 0);
+  if (musicVol > 0) execFileSync('python3', [path.join(dir, 'tools/lofi.py'), music, String(D + 0.5), seedArg || '1', cfg.crackle ? '1' : '0']);
   const ins = [], filt = []; let n = 0;
   TL.forEach((s, i) => { const f = path.join(tmp, `seg${i}.wav`); if (fs.existsSync(f)) { ins.push('-i', f); filt.push(`[${n}:a]aresample=44100,adelay=${Math.round(s.start * 1000)}|${Math.round(s.start * 1000)},volume=1.6[v${n}]`); n++; } });
-  ins.push('-i', music); filt.push(`[${n}:a]volume=0.16[mus]`);
   const vlabels = Array.from({ length: n }, (_, k) => `[v${k}]`).join('');
-  filt.push(`${vlabels}amix=inputs=${n}:normalize=0[vo]`, `[vo][mus]amix=inputs=2:normalize=0,alimiter=limit=0.95,atrim=0:${D.toFixed(2)}[aout]`);
+  if (musicVol > 0) {
+    ins.push('-i', music); filt.push(`[${n}:a]volume=${musicVol}[mus]`);
+    filt.push(`${vlabels}amix=inputs=${n}:normalize=0[vo]`, `[vo][mus]amix=inputs=2:normalize=0,alimiter=limit=0.95,atrim=0:${D.toFixed(2)}[aout]`);
+  } else {
+    filt.push(`${vlabels}amix=inputs=${n}:normalize=0,alimiter=limit=0.95,apad,atrim=0:${D.toFixed(2)}[aout]`);
+  }
   const mix = path.join(tmp, 'mix.wav');
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...ins, '-filter_complex', filt.join(';'), '-map', '[aout]', '-ac', '2', '-ar', '44100', mix]);
 
