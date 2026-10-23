@@ -1,5 +1,5 @@
 {
-"voice": "bm_daniel",
+"voice": "bm_lewis",
 "speed": 1.08,
 "segments": [
 {
@@ -175,5 +175,6 @@
 "say": "Comment setup, and I'll show you how it'd work for your business.",
 "button": "Comment SETUP"
 }
-]
+],
+"music": 0
 }
