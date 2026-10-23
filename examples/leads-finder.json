@@ -169,6 +169,13 @@
 "say": "This one's built for Cyprus, but we can build one for any country, and any trade."
 },
 {
+"show": "hook",
+"caption": "Tailored to the\nleads you want.",
+"accent": "leads you want.",
+"size": 118,
+"say": "And it's tailored to you. Whatever leads you're after, by trade, by area, by what they're missing, we build it to find them."
+},
+{
 "show": "cta",
 "caption": "Find clients\nin seconds.",
 "accent": "in seconds.",
