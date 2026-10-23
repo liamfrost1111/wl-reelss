@@ -32,7 +32,7 @@ const fs = require('fs'), path = require('path');
 
   const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' }).catch(() => chromium.launch());
   const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
-  await page.goto('file://' + path.join(dir, 'ad.html'));
+  await page.goto('file://' + path.join(dir, process.env.AD_HTML || 'ad.html'));
   await page.evaluate(tl => { window.TL = tl; return window.ready; }, TL);
   const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-', '-i', mix,
     '-map', '0:v', '-map', '1:a', '-c:v', 'libx264', '-preset', 'medium', '-crf', '21', '-maxrate', '4500k', '-bufsize', '9000k', '-pix_fmt', 'yuv420p',

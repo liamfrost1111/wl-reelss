@@ -1,0 +1,179 @@
+{
+"voice": "bm_daniel",
+"speed": 1.08,
+"segments": [
+{
+"show": "count",
+"count": 720,
+"say": "Seven hundred and twenty leads, with phone numbers, in one second.",
+"caption": "leads with numbers.\nIn one second."
+},
+{
+"show": "screen",
+"img": "shots/form.png",
+"imgs": [
+{
+"src": "shots/form2.png",
+"at": 2.6
+}
+],
+"from": {
+"y": 820,
+"z": 1.12
+},
+"to": {
+"y": 820,
+"z": 1.12
+},
+"taps": [
+[
+390,
+569,
+0.7
+],
+[
+390,
+731,
+2.2
+]
+],
+"say": "This is our Leads Finder. Pick the type of business you sell to, then the area. One town, a district, or the whole island."
+},
+{
+"show": "screen",
+"img": "shots/long.png",
+"from": {
+"y": 846,
+"z": 1.12
+},
+"to": {
+"y": 1960,
+"z": 1.05
+},
+"taps": [
+[
+390,
+846,
+0.25
+]
+],
+"delay": 0.7,
+"badge": "720 with a phone number",
+"badgeAt": 1.6,
+"say": "Hit find leads, and they're all there in about a second, with every number on screen.",
+"enter": false
+},
+{
+"show": "screen",
+"img": "shots/long.png",
+"enter": false,
+"from": {
+"y": 1960,
+"z": 1.05
+},
+"to": {
+"y": 3150,
+"z": 1
+},
+"hl": [
+32,
+2765,
+716,
+708
+],
+"hlAt": 1.4,
+"say": "No website? They go straight to the top, so you call the easiest wins first."
+},
+{
+"show": "screen",
+"img": "shots/long.png",
+"enter": false,
+"from": {
+"y": 5216,
+"z": 1
+},
+"to": {
+"y": 5216,
+"z": 1.18
+},
+"hl": [
+62,
+5176,
+656,
+82
+],
+"hlAt": 1.0,
+"say": "Tap to call, copy the number, or message them on WhatsApp, straight from the list."
+},
+{
+"show": "screen",
+"img": "shots/long.png",
+"enter": false,
+"from": {
+"y": 5300,
+"z": 1.18
+},
+"to": {
+"y": 5476,
+"z": 1.18
+},
+"hl": [
+62,
+5412,
+656,
+129
+],
+"hlAt": 0.6,
+"say": "Every lead comes with an opening line, so you're never stuck for what to say."
+},
+{
+"show": "screen",
+"img": "shots/long.png",
+"enter": false,
+"from": {
+"y": 2300,
+"z": 1.0
+},
+"to": {
+"y": 2340,
+"z": 1.0
+},
+"hl": [
+32,
+2136,
+716,
+410
+],
+"hlAt": 0.4,
+"say": "Check their websites for even more leads, then download the whole list to Excel."
+},
+{
+"show": "hook",
+"caption": "A whole afternoon.\nNow two minutes.",
+"accent": "two minutes.",
+"size": 118,
+"say": "What used to take a whole afternoon of searching now takes two minutes."
+},
+{
+"show": "hook",
+"caption": "More calls.\nMore customers.",
+"accent": "More customers.",
+"size": 124,
+"say": "More time on the phone means more conversations, and more customers."
+},
+{
+"show": "hook",
+"caption": "Built for Cyprus.\nReady for\nany country.",
+"accent": "any country.",
+"size": 118,
+"say": "This one's built for Cyprus, but we can build one for any country, and any trade."
+},
+{
+"show": "cta",
+"caption": "Find clients\nin seconds.",
+"accent": "in seconds.",
+"say": "Comment setup, and I'll show you how it'd work for your business.",
+"button": "Comment SETUP"
+}
+]
+}
