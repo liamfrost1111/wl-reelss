@@ -1,0 +1,140 @@
+{
+"voice": "bm_lewis",
+"speed": 1.08,
+"music": 0,
+"segments": [
+{
+"show": "count",
+"count": 25,
+"say": "Twenty five emails, ready to send, and you didn't type a single one.",
+"caption": "emails ready to send.\nZero typed."
+},
+{
+"show": "screen",
+"img": "shots/form.png",
+"imgs": [
+{
+"src": "shots/form2.png",
+"at": 2.4
+}
+],
+"from": {
+"y": 820,
+"z": 1.12
+},
+"to": {
+"y": 820,
+"z": 1.12
+},
+"taps": [
+[
+390,
+569,
+0.6
+],
+[
+390,
+731,
+2.0
+]
+],
+"say": "This is the new Leads Finder. Pick the kind of business you want as customers, and the area."
+},
+{
+"show": "screen",
+"img": "shots/long2.png",
+"enter": false,
+"from": {
+"y": 846,
+"z": 1.12
+},
+"to": {
+"y": 2750,
+"z": 1.0
+},
+"taps": [
+[
+390,
+846,
+0.25
+]
+],
+"delay": 0.6,
+"badge": "720 leads found",
+"badgeAt": 1.4,
+"say": "Hit find, and your leads are on screen in about a second, with their numbers and emails."
+},
+{
+"show": "drafts",
+"count": 25,
+"items": [
+{
+"subject": "A quick idea for Alex Creations",
+"preview": "Hi there, I came across Alex Creations and..."
+},
+{
+"subject": "A quick idea for Hairsmiths",
+"preview": "Hi there, I came across Hairsmiths and..."
+},
+{
+"subject": "A quick idea for G.Spot Hair Salon",
+"preview": "Hi there, I came across G.Spot Hair Salon..."
+},
+{
+"subject": "A quick idea for Auroria Hair and Beauty",
+"preview": "Hi there, I came across Auroria Hair and..."
+},
+{
+"subject": "A quick idea for King and Queen",
+"preview": "Hi there, I came across King and Queen..."
+},
+{
+"subject": "A quick idea for Hair Studio by Nicoletta",
+"preview": "Hi there, I came across Hair Studio by..."
+},
+{
+"subject": "A quick idea for Angelos Zorpas Salon",
+"preview": "Hi there, I came across Angelos Zorpas..."
+}
+],
+"say": "Now here's what's new. It writes an email to every lead, and puts each one straight into the drafts of your own email account."
+},
+{
+"show": "email",
+"subject": "A quick idea for Alex Creations",
+"biz": "Alex Creations",
+"typeSecs": 2.4,
+"sendAt": 3.2,
+"body": "Hi there,\n\nI came across Alex Creations and had a quick idea that could bring you more customers.\n\nHappy to show you how it would work. Just reply to this email.\n\nThanks,\nYour name",
+"say": "Each one's written to that business, by name. You read it, and hit send. That's it."
+},
+{
+"show": "hook",
+"caption": "Finding leads.\nWriting emails.\nBoth done for you.",
+"accent": "Both done for you.",
+"size": 104,
+"say": "Finding leads and writing emails used to be two separate jobs. Now they're both done for you."
+},
+{
+"show": "hook",
+"caption": "Twice the outreach.\nSame hours.",
+"accent": "Same hours.",
+"size": 110,
+"say": "So you can do twice the outreach, in the same hours, and spend your time on the people who reply."
+},
+{
+"show": "hook",
+"caption": "Tailored to the\nleads you want.",
+"accent": "leads you want.",
+"size": 118,
+"say": "And it's tailored to you. Any trade, any area, any country. Whatever leads you're after."
+},
+{
+"show": "cta",
+"caption": "Find them.\nEmail them.\nIn minutes.",
+"accent": "In minutes.",
+"say": "Comment setup, and I'll show you how it'd work for your business.",
+"button": "Comment SETUP"
+}
+]
+}
