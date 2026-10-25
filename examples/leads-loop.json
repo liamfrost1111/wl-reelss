@@ -1,0 +1,17 @@
+{"voice":"bm_lewis","speed":1.12,"music":0,"lead":0.1,"tail":0.5,"segments":[
+ {"show":"hook","caption":"Still finding\nnew clients\nby hand?","accent":"by hand?","size":132,"say":"Still trying to find new clients by hand?","pad":0.05},
+ {"show":"screen","img":"shots/long2.png","from":{"y":846,"z":1.12},"to":{"y":2700,"z":1.0},"taps":[[390,846,0.2]],"delay":0.5,"badge":"720 leads found","badgeAt":1.2,"say":"Pick a trade and an area, and it finds them in a second. Numbers and emails included."},
+ {"show":"drafts","count":25,"items":[
+   {"subject":"A quick idea for Alex Creations","preview":"Hi there, I came across Alex Creations and..."},
+   {"subject":"A quick idea for Hairsmiths","preview":"Hi there, I came across Hairsmiths and..."},
+   {"subject":"A quick idea for G.Spot Hair Salon","preview":"Hi there, I came across G.Spot Hair Salon..."},
+   {"subject":"A quick idea for Auroria Hair and Beauty","preview":"Hi there, I came across Auroria Hair and..."},
+   {"subject":"A quick idea for King and Queen","preview":"Hi there, I came across King and Queen..."},
+   {"subject":"A quick idea for Hair Studio by Nicoletta","preview":"Hi there, I came across Hair Studio by..."}],
+  "say":"Then it writes an email to every one, and drops it in your drafts."},
+ {"show":"email","subject":"A quick idea for Alex Creations","biz":"Alex Creations","typeSecs":1.6,"sendAt":1.9,
+  "body":"Hi there,\n\nI came across Alex Creations and had a quick idea that could bring you more customers.\n\nJust reply if you'd like to hear it.\n\nThanks,\nYour name",
+  "say":"Written to them, by name. You just hit send."},
+ {"show":"hook","caption":"Find new clients\nwithout the admin.","accent":"without the admin.","size":112,"say":"That's how you find new clients, without your evenings going on admin."},
+ {"show":"cta","caption":"Find new clients\nin seconds.","accent":"in seconds.","say":"Comment setup and I'll show you. Or you could keep on...","button":"Comment SETUP","pad":0.05}
+]}

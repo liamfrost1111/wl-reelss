@@ -11,8 +11,8 @@ const fs = require('fs'), path = require('path');
   execFileSync('python3', [path.join(dir, 'tools/tts.py'), cfgPath, tmp], { stdio: 'inherit' });
   const durs = JSON.parse(fs.readFileSync(path.join(tmp, 'durations.json')));
   // timeline: short lead-in, small gaps, hold on the CTA
-  let t = 0.35; const TL = cfg.segments.map((s, i) => { const seg = { ...s, start: t, end: t + durs[i] + (s.pad || 0.15) }; t = seg.end + 0.12; return seg; });
-  TL[TL.length - 1].end += 1.6; const D = TL[TL.length - 1].end + 0.4, N = Math.round(D * FPS);
+  let t = cfg.lead ?? 0.35; const TL = cfg.segments.map((s, i) => { const seg = { ...s, start: t, end: t + durs[i] + (s.pad || 0.15) }; t = seg.end + 0.12; return seg; });
+  TL[TL.length - 1].end += (cfg.tail ?? 1.6); const D = TL[TL.length - 1].end + (cfg.tail === undefined ? 0.4 : 0.1), N = Math.round(D * FPS);
 
   // audio: voice segments placed on the timeline, lofi bed underneath (ducked)
   const music = path.join(tmp, 'm.wav');
