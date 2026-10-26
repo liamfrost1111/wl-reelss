@@ -1,0 +1,148 @@
+{
+ "voice": "bm_lewis",
+ "speed": 1.15,
+ "music": 0,
+ "lead": 0.1,
+ "tail": 0.5,
+ "segments": [
+  {
+   "show": "hook",
+   "caption": "Finding leads,\nthen emailing\nby hand?",
+   "accent": "by hand?",
+   "size": 124,
+   "say": "Finding leads, then writing every email by hand?",
+   "pad": 0.05
+  },
+  {
+   "show": "screen",
+   "img": "shots/form2.png",
+   "from": {
+    "y": 700,
+    "z": 1.0
+   },
+   "to": {
+    "y": 660,
+    "z": 1.0
+   },
+   "delay": 0.4,
+   "hl": [
+    70,
+    425,
+    640,
+    252
+   ],
+   "hlAt": 0.4,
+   "taps": [
+    [
+     390,
+     746,
+     2.7
+    ]
+   ],
+   "say": "The Leads Finder finds the businesses for you."
+  },
+  {
+   "show": "screen",
+   "img": "shots/long2.png",
+   "enter": false,
+   "from": {
+    "y": 1060,
+    "z": 1.1
+   },
+   "to": {
+    "y": 1000,
+    "z": 1.0
+   },
+   "badge": "720 leads found",
+   "badgeAt": 0.5,
+   "say": "Hundreds of leads, with phone numbers and emails."
+  },
+  {
+   "show": "screen",
+   "img": "shots/long2.png",
+   "enter": false,
+   "from": {
+    "y": 1060,
+    "z": 1.0
+   },
+   "to": {
+    "y": 1100,
+    "z": 1.05
+   },
+   "btn": {
+    "x": 70,
+    "y": 1285,
+    "w": 640,
+    "h": 96,
+    "label": "Email these leads",
+    "at": 0.4,
+    "press": 2.2,
+    "ph": 330,
+    "sub": "Saved to your drafts. Nothing sends itself."
+   },
+   "taps": [
+    [
+     390,
+     1340,
+     2.2
+    ]
+   ],
+   "say": "One click, and every lead gets a personal email, sent to your drafts."
+  },
+  {
+   "show": "drafts",
+   "count": 25,
+   "items": [
+    {
+     "subject": "A quick idea for Alex Creations",
+     "preview": "Hi there, I came across Alex Creations and..."
+    },
+    {
+     "subject": "A quick idea for Hairsmiths",
+     "preview": "Hi there, I came across Hairsmiths and..."
+    },
+    {
+     "subject": "A quick idea for G.Spot Hair Salon",
+     "preview": "Hi there, I came across G.Spot Hair Salon..."
+    },
+    {
+     "subject": "A quick idea for Auroria Hair and Beauty",
+     "preview": "Hi there, I came across Auroria Hair and..."
+    },
+    {
+     "subject": "A quick idea for King and Queen",
+     "preview": "Hi there, I came across King and Queen..."
+    },
+    {
+     "subject": "A quick idea for Hair Studio by Nicoletta",
+     "preview": "Hi there, I came across Hair Studio by..."
+    }
+   ],
+   "say": "Each one written for that business, ready to send."
+  },
+  {
+   "show": "email",
+   "subject": "A quick idea for Alex Creations",
+   "biz": "Alex Creations",
+   "typeSecs": 1.5,
+   "sendAt": 1.8,
+   "body": "Hi there,\n\nI came across Alex Creations and had a quick idea that could bring you more customers.\n\nJust reply if you'd like to hear it.\n\nThanks,\nYour name",
+   "say": "Personal, by name. You just hit send."
+  },
+  {
+   "show": "hook",
+   "caption": "Automated outreach.\nOne click.",
+   "accent": "One click.",
+   "size": 112,
+   "say": "That's automated outreach. Leads found, emails written, one click."
+  },
+  {
+   "show": "cta",
+   "caption": "Automated outreach\nfor your business.",
+   "accent": "for your business.",
+   "button": "Comment SETUP",
+   "say": "Comment setup and I'll show you.",
+   "pad": 0.05
+  }
+ ]
+}
