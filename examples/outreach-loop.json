@@ -1,0 +1,23 @@
+{"voice":"bm_lewis","speed":1.12,"music":0,"lead":0.1,"tail":0.5,"segments":[
+ {"show":"hook","caption":"Outreach emails,\nby hand?","accent":"by hand?","size":132,"say":"Still doing your outreach emails by hand?","pad":0.05},
+ {"show":"make","name":"Email Drafts","count":25,"clickAt":0.9,"runAt":1.3,"per":0.6,"mods":[
+   {"name":"Search Rows","app":"Google Sheets","col":"#2E9E63","glyph":"S"},
+   {"name":"Set variables","app":"Tools","col":"#5A5F73","glyph":"x"},
+   {"name":"Create a Message","app":"Outlook","col":"#2F7FD6","glyph":"@"},
+   {"name":"Update a Row","app":"Google Sheets","col":"#2E9E63","glyph":"S"}],
+  "say":"This is automated outreach. One click, and it reads your leads sheet."},
+ {"show":"sheet","count":25,"flipAt":0.5,"step":0.3,"rows":[
+   ["Alex Creations","•••••@••••.com.cy"],["Hairsmiths","•••••@••••.com"],["G.Spot Hair Salon","•••••@••••.com.cy"],
+   ["Auroria Hair and Beauty","•••••@••••.com"],["King and Queen","•••••@••••.com.cy"],["Hair Studio by Nicoletta","•••••@••••.com"],["Studio 7 Hair","•••••@••••.com.cy"]],
+  "say":"It works down the list, row by row, and marks each one off."},
+ {"show":"drafts","count":25,"items":[
+   {"subject":"A quick idea for Alex Creations","preview":"Hi there, I came across Alex Creations and..."},
+   {"subject":"A quick idea for Hairsmiths","preview":"Hi there, I came across Hairsmiths and..."},
+   {"subject":"A quick idea for G.Spot Hair Salon","preview":"Hi there, I came across G.Spot Hair Salon..."},
+   {"subject":"A quick idea for Auroria Hair and Beauty","preview":"Hi there, I came across Auroria Hair and..."},
+   {"subject":"A quick idea for King and Queen","preview":"Hi there, I came across King and Queen..."},
+   {"subject":"A quick idea for Hair Studio by Nicoletta","preview":"Hi there, I came across Hair Studio by..."}],
+  "say":"Every one lands in your drafts, written and ready."},
+ {"show":"hook","caption":"Automated outreach.\nYou just hit send.","accent":"You just hit send.","size":104,"say":"Automated outreach. You just hit send."},
+ {"show":"cta","caption":"Automated outreach\nfor your business.","accent":"for your business.","button":"Comment SETUP","say":"Comment setup and I'll show you. Or it's back to...","pad":0.05}
+]}
