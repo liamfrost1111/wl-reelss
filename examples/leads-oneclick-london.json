@@ -7,10 +7,10 @@
  "segments": [
   {
    "show": "hook",
-   "caption": "Finding London\nleads, then emailing\nby hand?",
+   "caption": "Finding leads,\nthen emailing\nby hand?",
    "accent": "by hand?",
-   "size": 116,
-   "say": "Finding London leads, then writing every email by hand?",
+   "size": 124,
+   "say": "Finding leads, then writing every email by hand?",
    "pad": 0.05
   },
   {
@@ -39,7 +39,7 @@
      2.0
     ]
    ],
-   "say": "Pick a trade, pick London, hit find."
+   "say": "Pick a trade, pick an area, hit find."
   },
   {
    "show": "screen",
