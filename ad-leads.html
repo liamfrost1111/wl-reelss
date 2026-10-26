@@ -266,5 +266,5 @@ window.renderAt=function(t){
   const cur=(window.TL||[]).find(s=>t>=s.start&&t<s.end+0.1);if(cur)subtitles(cur,t);
   finish(t);return true;
 };
-window.ready=Promise.all(['shots/form.png','shots/form2.png','shots/long.png','shots/long2.png'].map(u=>new Promise(r=>{const im=img(u);if(im.complete)r();else{im.onload=r;im.onerror=r}})).concat(['118px IS','italic 118px IS','600 54px Plex','700 46px Plex','500 26px Mono'].map(f=>document.fonts.load(f))));
+window.ready=Promise.all(['shots/form.png','shots/form2.png','shots/long.png','shots/long2.png','shots/form2_ldn.png','shots/long2_ldn.png'].map(u=>new Promise(r=>{const im=img(u);if(im.complete)r();else{im.onload=r;im.onerror=r}})).concat(['118px IS','italic 118px IS','600 54px Plex','700 46px Plex','500 26px Mono'].map(f=>document.fonts.load(f))));
 </script></body></html>

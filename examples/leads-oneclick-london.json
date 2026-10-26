@@ -1,0 +1,148 @@
+{
+ "voice": "bm_lewis",
+ "speed": 1.15,
+ "music": 0,
+ "lead": 0.1,
+ "tail": 0.5,
+ "segments": [
+  {
+   "show": "hook",
+   "caption": "Finding London\nleads, then emailing\nby hand?",
+   "accent": "by hand?",
+   "size": 116,
+   "say": "Finding London leads, then writing every email by hand?",
+   "pad": 0.05
+  },
+  {
+   "show": "screen",
+   "img": "shots/form2_ldn.png",
+   "from": {
+    "y": 700,
+    "z": 1.0
+   },
+   "to": {
+    "y": 700,
+    "z": 1.0
+   },
+   "delay": 0.4,
+   "hl": [
+    70,
+    355,
+    640,
+    285
+   ],
+   "hlAt": 0.4,
+   "taps": [
+    [
+     390,
+     666,
+     2.0
+    ]
+   ],
+   "say": "Pick a trade, pick London, hit find."
+  },
+  {
+   "show": "screen",
+   "img": "shots/long2_ldn.png",
+   "enter": false,
+   "from": {
+    "y": 840,
+    "z": 1.0
+   },
+   "to": {
+    "y": 860,
+    "z": 1.0
+   },
+   "badge": "598 leads found",
+   "badgeAt": 0.5,
+   "say": "Hundreds of leads, with phone numbers and emails."
+  },
+  {
+   "show": "screen",
+   "img": "shots/long2_ldn.png",
+   "enter": false,
+   "from": {
+    "y": 860,
+    "z": 1.0
+   },
+   "to": {
+    "y": 900,
+    "z": 1.0
+   },
+   "btn": {
+    "x": 70,
+    "y": 1285,
+    "w": 640,
+    "h": 96,
+    "label": "Email these leads",
+    "at": 0.4,
+    "press": 2.2,
+    "ph": 330,
+    "sub": "Saved to your drafts. Nothing sends itself."
+   },
+   "taps": [
+    [
+     390,
+     1340,
+     2.2
+    ]
+   ],
+   "say": "One click, and every lead gets a personal email, sent to your drafts."
+  },
+  {
+   "show": "drafts",
+   "count": 25,
+   "items": [
+    {
+     "subject": "A quick idea for Marlow Street Barbers",
+     "preview": "Hi there, I came across Marlow Street Barbers..."
+    },
+    {
+     "subject": "A quick idea for Bloom and Co Hair",
+     "preview": "Hi there, I came across Bloom and Co Hair..."
+    },
+    {
+     "subject": "A quick idea for Kensal Cuts",
+     "preview": "Hi there, I came across Kensal Cuts..."
+    },
+    {
+     "subject": "A quick idea for Larkfield Hair Studio",
+     "preview": "Hi there, I came across Larkfield Hair Studio..."
+    },
+    {
+     "subject": "A quick idea for Atlas Barbershop",
+     "preview": "Hi there, I came across Atlas Barbershop..."
+    },
+    {
+     "subject": "A quick idea for Juniper Beauty Rooms",
+     "preview": "Hi there, I came across Juniper Beauty Rooms..."
+    }
+   ],
+   "say": "Each one written for that business, ready to send."
+  },
+  {
+   "show": "email",
+   "subject": "A quick idea for Marlow Street Barbers",
+   "biz": "Marlow Street Barbers",
+   "typeSecs": 1.5,
+   "sendAt": 1.8,
+   "body": "Hi there,\n\nI came across Marlow Street Barbers and had a quick idea that could bring you more customers.\n\nJust reply if you'd like to hear it.\n\nThanks,\nYour name",
+   "say": "Personal, by name. You just hit send."
+  },
+  {
+   "show": "hook",
+   "caption": "Automated outreach.\nOne click.",
+   "accent": "One click.",
+   "size": 112,
+   "say": "That's automated outreach. Leads found, emails written, one click."
+  },
+  {
+   "show": "cta",
+   "caption": "Automated outreach\nfor your business.",
+   "accent": "for your business.",
+   "button": "Comment SETUP",
+   "say": "Comment setup and I'll show you.",
+   "pad": 0.05
+  }
+ ]
+}
