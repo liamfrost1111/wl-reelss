@@ -1,0 +1,104 @@
+{
+ "voice": "bm_lewis",
+ "speed": 1.15,
+ "music": 0,
+ "lead": 0.1,
+ "tail": 0.5,
+ "segments": [
+  {
+   "show": "hook",
+   "caption": "Web designers\nwith no clients?",
+   "accent": "no clients?",
+   "size": 120,
+   "say": "Web designers with no clients?",
+   "pad": 0.05
+  },
+  {
+   "show": "screen",
+   "img": "shots/form2.png",
+   "from": {
+    "y": 700,
+    "z": 1.0
+   },
+   "to": {
+    "y": 660,
+    "z": 1.0
+   },
+   "delay": 0.4,
+   "hl": [
+    70,
+    425,
+    640,
+    252
+   ],
+   "hlAt": 0.4,
+   "taps": [
+    [
+     390,
+     746,
+     2.9
+    ]
+   ],
+   "say": "This is a leads finder for web designers. Pick a trade, pick an area, hit find."
+  },
+  {
+   "show": "screen",
+   "img": "shots/long2.png",
+   "enter": false,
+   "from": {
+    "y": 2450,
+    "z": 1.0
+   },
+   "to": {
+    "y": 2650,
+    "z": 1.0
+   },
+   "badge": "720 leads found",
+   "badgeAt": 0.5,
+   "say": "Hundreds of local businesses, every one with a phone number."
+  },
+  {
+   "show": "screen",
+   "img": "shots/long2.png",
+   "enter": false,
+   "from": {
+    "y": 2650,
+    "z": 1.0
+   },
+   "to": {
+    "y": 3050,
+    "z": 1.05
+   },
+   "say": "The ones with no website, or a bad one, go straight to the top. Those are your clients."
+  },
+  {
+   "show": "screen",
+   "img": "shots/long2.png",
+   "enter": false,
+   "from": {
+    "y": 3050,
+    "z": 1.05
+   },
+   "to": {
+    "y": 3500,
+    "z": 1.0
+   },
+   "say": "Then it checks their site and shows what's broken, so you know your pitch before you call."
+  },
+  {
+   "show": "hook",
+   "caption": "Clients who need\na website,\nfound for you.",
+   "accent": "found for you.",
+   "size": 104,
+   "say": "Clients who need a website, found for you."
+  },
+  {
+   "show": "cta",
+   "caption": "Leads for\nweb designers.",
+   "accent": "web designers.",
+   "button": "Comment SETUP",
+   "say": "Comment setup and I'll show you.",
+   "pad": 0.05
+  }
+ ]
+}
