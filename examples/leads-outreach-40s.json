@@ -1,0 +1,192 @@
+{
+ "voice": "bm_lewis",
+ "speed": 1.15,
+ "music": 0,
+ "lead": 0.1,
+ "tail": 0.5,
+ "segments": [
+  {
+   "show": "hook",
+   "caption": "Finding leads\ntakes hours.",
+   "accent": "takes hours.",
+   "size": 124,
+   "say": "Finding leads takes hours.",
+   "pad": 0.05
+  },
+  {
+   "show": "hook",
+   "caption": "But that's not\nthe slow part.",
+   "accent": "not",
+   "size": 124,
+   "say": "But that's not the slow part.",
+   "pad": 0.05
+  },
+  {
+   "show": "hook",
+   "caption": "Writing every\nemail is.",
+   "accent": "every email",
+   "size": 124,
+   "say": "Writing every email is.",
+   "pad": 0.05
+  },
+  {
+   "show": "screen",
+   "img": "shots/form2.png",
+   "from": {
+    "y": 700,
+    "z": 1.0
+   },
+   "to": {
+    "y": 660,
+    "z": 1.0
+   },
+   "delay": 0.4,
+   "hl": [
+    70,
+    425,
+    640,
+    252
+   ],
+   "hlAt": 0.4,
+   "taps": [
+    [
+     390,
+     746,
+     2.7
+    ]
+   ],
+   "say": "This leads finder fixes both. Pick a business type, pick an area, hit find."
+  },
+  {
+   "show": "screen",
+   "img": "shots/long2.png",
+   "enter": false,
+   "from": {
+    "y": 2450,
+    "z": 1.0
+   },
+   "to": {
+    "y": 2650,
+    "z": 1.0
+   },
+   "badge": "720 leads found",
+   "badgeAt": 0.5,
+   "say": "It lists hundreds of local businesses, with phone numbers and emails."
+  },
+  {
+   "show": "screen",
+   "img": "shots/long2.png",
+   "enter": false,
+   "from": {
+    "y": 2650,
+    "z": 1.0
+   },
+   "to": {
+    "y": 3050,
+    "z": 1.05
+   },
+   "say": "The ones with no website go to the top, so you know who to call first."
+  },
+  {
+   "show": "screen",
+   "img": "shots/long2.png",
+   "enter": false,
+   "from": {
+    "y": 3050,
+    "z": 1.05
+   },
+   "to": {
+    "y": 3500,
+    "z": 1.0
+   },
+   "say": "It also checks their website and flags what's broken, so your email has a reason behind it."
+  },
+  {
+   "show": "screen",
+   "img": "shots/long2.png",
+   "enter": false,
+   "from": {
+    "y": 1060,
+    "z": 1.0
+   },
+   "to": {
+    "y": 1100,
+    "z": 1.05
+   },
+   "btn": {
+    "x": 70,
+    "y": 1285,
+    "w": 640,
+    "h": 96,
+    "label": "Email these leads",
+    "at": 0.4,
+    "press": 2.2,
+    "ph": 330,
+    "sub": "Saved to your drafts. Nothing sends itself."
+   },
+   "taps": [
+    [
+     390,
+     1340,
+     2.2
+    ]
+   ],
+   "say": "Then one click writes a personal email to every lead, and saves them to your drafts."
+  },
+  {
+   "show": "drafts",
+   "count": 25,
+   "items": [
+    {
+     "subject": "A quick idea for Alex Creations",
+     "preview": "Hi there, I came across Alex Creations and..."
+    },
+    {
+     "subject": "A quick idea for Hairsmiths",
+     "preview": "Hi there, I came across Hairsmiths and..."
+    },
+    {
+     "subject": "A quick idea for G.Spot Hair Salon",
+     "preview": "Hi there, I came across G.Spot Hair Salon..."
+    },
+    {
+     "subject": "A quick idea for Auroria Hair and Beauty",
+     "preview": "Hi there, I came across Auroria Hair and..."
+    },
+    {
+     "subject": "A quick idea for King and Queen",
+     "preview": "Hi there, I came across King and Queen..."
+    },
+    {
+     "subject": "A quick idea for Hair Studio by Nicoletta",
+     "preview": "Hi there, I came across Hair Studio by..."
+    }
+   ],
+   "say": "Twenty five drafts, ready to go."
+  },
+  {
+   "show": "email",
+   "subject": "A quick idea for Alex Creations",
+   "biz": "Alex Creations",
+   "typeSecs": 1.5,
+   "sendAt": 1.8,
+   "body": "Hi there,\n\nI came across Alex Creations and had a quick idea that could bring you more customers.\n\nJust reply if you'd like to hear it.\n\nThanks,\nYour name",
+   "say": "Each one is by name. You just hit send. Nothing sends itself."
+  },
+  {
+   "show": "hook",
+   "caption": "Leads found.\nEmails written.\nOne click.",
+   "accent": "One click.",
+   "size": 112,
+   "say": "Leads found. Emails written. One click."
+  },
+  {
+   "show": "cta",
+   "caption": "Leads finder\nand outreach.",
+   "accent": "and outreach.",
+   "button": "Comment SETUP",
+   "say": "Comment setup and I'll show you.",
+   "pad": 0.05
+  }
+ ]
+}
